@@ -61,6 +61,7 @@ fn main() {
     }
 }
 
+/// prompt input options to user
 fn prompt_user_options(eligible: &[&str]) {
     println!("[a] add all files");
     for (index, file_name) in eligible.iter().enumerate() {
