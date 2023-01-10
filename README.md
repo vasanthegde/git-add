@@ -1,12 +1,13 @@
 # grit_add
-It is simple CLI tool for your git add command
+It is simple CLI tool for your **_git add_** command.
+
 there are great tools like lazygit or gitui which provides so far better fetaures for git commands. 
 If you are looknig for full blown git integration please go to such tools.
 
 then why this yet another tool ?
 
 the main problem I faced during git workflow is "git add" commands.
-always providing complete file path in git add command is pain hence this simple CLI tool which take shorthand or simple file names as input and execute git add command for those files. No need to remember many keyboard short cut. 
+always providing complete file path is pain hence this simple CLI tool which takse shorthand or simple file names as input and executes git add command to matching unstaged files. No need to remember any keyboard shortcuts. 
 
 # Examples 
 ```
