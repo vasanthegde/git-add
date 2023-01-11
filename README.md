@@ -15,7 +15,7 @@ the main problem with "git add" command is it need complete file path which is b
 Hence this tiny CLI wrapper which takes shorthand or simple file names as input and executes git add command to matching unstaged files. 
 No need to remember any keyboard shortcuts. 
 
-# Examples 
+# Guide 
 1. 
 ```
 ./git-add
@@ -47,6 +47,17 @@ which will match file with name **MyGlobalAbstractFactory.java** for example.
 ./git-add MGAF lib.rs main.rs
 ```
 you can pass multiple file names at once
+
+## Installation
+If you would like to build from source:
+
+```
+git clone https://github.com/vasanthegde/git-add
+cd git-add
+cargo install --path .
+```
+else checkout release section to grab available binaries.
+
 
 ## Upcoming features
 1. performance optimazation by using hashmap look ups
