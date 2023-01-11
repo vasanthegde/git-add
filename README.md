@@ -15,38 +15,18 @@ the main problem with "git add" command is it need complete file path which is b
 Hence this tiny CLI wrapper which takes shorthand or simple file names as input and executes git add command to matching unstaged files. 
 No need to remember any keyboard shortcuts. 
 
-# Guide 
-1. 
+# Guide
+
+### Usage
 ```
 ./git-add
+./git-add lib.rs                      // match src/lib.rs
+./git-add MGAF                       // match file with name MyGlobalAbstractFactory.java
+./git-add MGAF lib.rs main.rs        // match multiple names
 ```
-which will prompt label to user to select which file to be added
-![image](https://user-images.githubusercontent.com/12895102/211626465-95b8009f-bea5-4943-8a8c-b728da5a5711.png)
 
-2.
-```
-./git-add lib.rs
-```
-which will match **src/lib.rs** and execute git add **src/lib.rs** command
-
-3.
-```
-./git-add file
-```
-which will match two files **file1.txt** and **file2.txt** and prompt lable input to execute git add command
-![image](https://user-images.githubusercontent.com/12895102/211627064-70ad0a18-841b-4cec-b712-e5a07c7c2277.png)
-
-4.
-```
-./git-add MGAF 
-```
-which will match file with name **MyGlobalAbstractFactory.java** for example.
-
-5.
-```
-./git-add MGAF lib.rs main.rs
-```
-you can pass multiple file names at once
+![git-add1](https://user-images.githubusercontent.com/12895102/211737721-5a2b8725-345c-4344-b0a2-271788738e56.gif)
+![tty](https://user-images.githubusercontent.com/12895102/211737830-3dfbbc2c-6723-4aba-b070-bdcd517a80df.gif)
 
 ## Installation
 If you would like to build from source:
