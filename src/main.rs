@@ -5,7 +5,7 @@ use std::{
 use std::collections::HashSet;
 use text_io::read;
 
- const INPUT_PROMPT: &'static str = "Enter file name prefix for which you wish to perform 'git add' (you can enter multiple option with space separated delimiter) : ";
+const INPUT_PROMPT: &'static str = "Enter file name prefix for which you wish to perform 'git add' (you can enter multiple option with space separated delimiter) : ";
 fn main() {
     let args: Vec<String> = env::args().collect();
     let args: &[String] = &args[1..];
